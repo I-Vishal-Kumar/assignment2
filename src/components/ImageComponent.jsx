@@ -27,7 +27,7 @@ function ImageComponent({ src, alt }) {
         onError={handleError}
       />
       {!loaded && (
-        <Box>
+        <Box className="flex justify-center items-center">
           <CircularProgress />
         </Box>
       )}
