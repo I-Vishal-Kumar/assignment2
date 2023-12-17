@@ -32,8 +32,9 @@ const UserCard = ({ data, activeUser }) => {
               <label className=" font-semibold capitalize">full Name</label>
               <p className="py-[0.5rem] text-black rounded-md bg-[#d8d7d7] px-[1rem]">
                 {(activeUser !== -1 &&
-                  data[activeUser]?.profile?.firstName + activeUser !== -1 &&
-                  data[activeUser]?.profile?.firstName) ||
+                  data[activeUser]?.profile?.firstName +
+                    " " +
+                    data[activeUser]?.profile?.lastName) ||
                   "name not available"}
               </p>
             </div>
